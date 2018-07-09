@@ -1,22 +1,25 @@
 
 
-/* body { 
-  background: url(./../assets/Star-Wars-poster.jpg) no-repeat center center fixed; 
+/* Formula to perfectly center a background image
+body { 
+  background: url(./../assets/Star-Wars-poster.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-
-} */
+} 
+*/
 
 .baseModule {
  
   width: 100vw;
   height: 100vh;
-
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
-.red {
+.gradient {
   background-image: 
     linear-gradient(
       rgba(231, 220, 220, 0.018),
