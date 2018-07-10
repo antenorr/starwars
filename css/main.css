@@ -8,7 +8,13 @@ body {
   -o-background-size: cover;
 } 
 */
-
+/*  ******  MAIN BACKGROUND scripts ****** */
+body {
+  color: white;
+}
+.centered_text {
+  text-align: center;
+}
 .baseModule {
   width: 100vw;
   height: 100vh;
@@ -17,6 +23,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   z-index: -1;
+  
 }
 
 .gradient {
@@ -32,6 +39,8 @@ body {
      background-attachment: fixed;
 }
 
+
+/*  ******  PLAY BUTTON scripts ****** */
 .play_button {
   background-color: rgb(139, 130, 139, 0.4);
   color: white;
@@ -56,17 +65,52 @@ body {
     transition: box-shadow 1s linear;
 }
 .glow_effect:hover {
+  color: rgb(27, 226, 27);
   -webkit-box-shadow:0 0 50px  rgb(27, 226, 27); 
   -moz-box-shadow: 0 0 50px  rgb(27, 226, 27); 
   box-shadow:0 0 50px rgb(27, 226, 27);
 }
 
 .glow_effect.glow {
-  -webkit-box-shadow:0 0 40px blue; 
-  -moz-box-shadow: 0 0 40px blue; 
-  box-shadow:0 0 40px blue;
+  -webkit-box-shadow:0 0 50px blue; 
+  -moz-box-shadow: 0 0 50px blue; 
+  box-shadow:0 0 50px blue;
 }
 
 
-/* ***** Modal ***** */
+/* ***** MODAL WINDOW ***** */
 
+.modal_window {
+  width: 90vw;
+  height: 60vh;
+  background-color: rgba(12, 69, 224, 0.175);
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid blue;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 10px 20px -6px blue;
+}
+
+.fade_in_effect {
+  display: none;
+}
+
+.fighter:hover {
+   box-shadow: 0 10px 20px -6px purple;
+   cursor: pointer;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .modal_window {
+      width: 40vh;
+      height: 70vh;
+    }
+}

@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-
-
     
 
     let glow = $('.glow_effect');
@@ -12,8 +10,22 @@ $(document).ready(function () {
     let play_button = $(".play_button");
     play_button.on('click', () => {
         play_button.fadeOut(500);
+        $(".fade_in_effect").fadeIn("slow")
     })
 
+
+
+
+    $(".choose_prompt").text('Choose your 1st fighter!')
+
+
+
+
+
+    let selectedFighters = [];
+    const chooseFighter = () => {
+
+    }
 
 
 
