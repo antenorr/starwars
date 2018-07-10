@@ -11,7 +11,7 @@
 </head>
 
 
-<body class="baseModule gradient">
+<body class="baseModule gradient" style="z-index: -1;">
     <!-- <div class=""> -->
         <!-- Initial Play Button -->
 
@@ -20,39 +20,46 @@
             <button class="play_button glow_effect" >PLAY</button>
         </div>
 
-
+        <div class="fighter_one" style="z-index: -1;"></div>
+        <div class="fighter_two" style="z-index: -1;"></div>
 
         <!-- SECTION ***** slide down Modal ***** SECTION -->
   
-        <div class=" container modal_window fade_in_effect modal-flex">
+        <div class=" container modal_window fade_in_effect fade_out_effect modal-flex" style="z-index: 20;">
             <div class="row_of_characters row">
-                <div class="aayla fighter">
-                    <img src="./../assets/aayla-secura.png" alt="aayla-secura-photo">
+                <div class="aayla">
+                    <img src="./../assets/aayla-secura.png" alt="aayla-secura-photo" class="aayla fighter">
                     <p class="centered_text">Aayla</p>
                     <p class="centered_text">Attack Power: <span class="attack_power">30</span> </p>
                 </div>
-                <div class="luke fighter">
-                    <img src="./../assets/luke-skywalker.png" alt="Luke Skywalker photo">
+                <div class="luke">
+                    <img src="./../assets/luke-skywalker.png" alt="Luke Skywalker photo" class="luke fighter">
                     <p class="centered_text">Luke Skywalker</p>
                     <p class="centered_text">Attack Power: <span class="attack_power">25</span> </p>
                 </div>
-                <div class="boba fighter">
-                    <img src="./../assets/boba-fett.png" alt="Boba Fett photo">
+                <div class="boba">
+                    <img src="./../assets/boba-fett.png" alt="Boba Fett photo" class="boba fighter">
                     <p class="centered_text">Boba</p>
                     <p class="centered_text">Attack Power: <span class="attack_power">20</span> </p>
                 </div>
-                <div class="vader fighter">
-                    <img src="./../assets/vader.png" alt="Dark Vader photos">
+                <div class="vader">
+                    <img src="./../assets/vader.png" alt="darth Vader photos" class="darth fighter">
                     <p class="centered_text">Darth Vader</p>
                     <p class="centered_text">Attack Power: <span class="attack_power">50</span> </p>
                 </div>
             </div>
-  
                 <h2 class="choose_prompt text-center mt-2">sdfsdf</h2>
           
 
             <!-- <button class="close_modal_controller" style="display: none;">X</button> -->
-        </div>
+
+        </div> <!-- END MODAL SECTION -->
+
+
+
+
+
+       
 
 
 
